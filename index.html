@@ -1,9 +1,29 @@
-<html lang="ro" class="scroll-smooth"><head>
+<!DOCTYPE html>
+<html lang="ro" class="scroll-smooth">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Ing. Tiberiu Drăghici | Specialist Agricultură 4.0</title>
+
+    <!-- SEO Essentials -->
+    <title>Dr. Ing. Tiberiu Drăghici | Expert Tehnic Agricol – Sibiu</title>
+    <meta name="description" content="Dr. Ing. Tiberiu Drăghici – expert tehnic agricol din Sibiu. Evaluare daune agricole pentru companii de asigurări, capitol tehnic în studii de fezabilitate, teledetecție UAV și analiză GIS în Regiunea Centru.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tiberiudraghici.github.io/">
+
+    <!-- Open Graph (LinkedIn, WhatsApp, Facebook) -->
+    <meta property="og:title" content="Dr. Ing. Tiberiu Drăghici | Expert Tehnic Agricol">
+    <meta property="og:description" content="Evaluare daune agricole, studii de fezabilitate și teledetecție UAV în Regiunea Centru. Doctor inginer, specialist în agricultură de precizie.">
+    <meta property="og:image" content="https://tiberiudraghici.github.io/Prezentare.jpg">
+    <meta property="og:url" content="https://tiberiudraghici.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ro_RO">
+
+    <!-- Google Fonts – preconnect pentru viteza -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -15,325 +35,426 @@
                         'soft-gold': '#c5a059',
                     },
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
+                        serif: ['"DM Serif Display"', 'Georgia', 'serif'],
+                        sans: ['"DM Sans"', 'sans-serif'],
                     },
                 }
             }
         }
     </script>
     <style>
+        body { font-family: 'DM Sans', sans-serif; }
+        h1, h2, .serif { font-family: 'DM Serif Display', serif; }
+
         .glass-card {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
         }
         .hero-gradient {
-            background: linear-gradient(135deg, #2d5a27 0%, #3d7a36 100%);
+            background: linear-gradient(135deg, #1b3022 0%, #2d5a27 60%, #3d7a36 100%);
+        }
+
+        .fade-up {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .section-line {
+            width: 48px;
+            height: 3px;
+            background: linear-gradient(90deg, #2d5a27, #c5a059);
+            border-radius: 2px;
+            margin: 0 auto 2rem;
+        }
+
+        .service-card {
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 40px rgba(27,48,34,0.12);
+        }
+
+        .instrument-badge {
+            border: 1px solid rgba(45,90,39,0.2);
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .instrument-badge:hover {
+            background: rgba(45,90,39,0.06);
+            border-color: rgba(45,90,39,0.5);
         }
     </style>
-<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.-right-4{right:-1rem}.-top-4{top:-1rem}.bottom-8{bottom:2rem}.left-8{left:2rem}.right-8{right:2rem}.z-10{z-index:10}.z-50{z-index:50}.order-1{order:1}.order-2{order:2}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-2{margin-bottom:0.5rem}.mb-20{margin-bottom:5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mr-2{margin-right:0.5rem}.mt-1{margin-top:0.25rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.aspect-square{aspect-ratio:1 / 1}.h-1{height:0.25rem}.h-1\.5{height:0.375rem}.h-12{height:3rem}.h-16{height:4rem}.h-24{height:6rem}.h-32{height:8rem}.h-4{height:1rem}.h-48{height:12rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-8{height:2rem}.h-full{height:100%}.w-1\.5{width:0.375rem}.w-12{width:3rem}.w-16{width:4rem}.w-20{width:5rem}.w-24{width:6rem}.w-32{width:8rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-8{width:2rem}.w-full{width:100%}.max-w-7xl{max-width:80rem}.max-w-xl{max-width:36rem}.flex-1{flex:1 1 0%}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-12{gap:3rem}.gap-16{gap:4rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-8 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2rem * var(--tw-space-x-reverse));margin-left:calc(2rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.scroll-smooth{scroll-behavior:smooth}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-l{border-left-width:1px}.border-t{border-top-width:1px}.border-accent-green{--tw-border-opacity:1;border-color:rgb(45 90 39 / var(--tw-border-opacity, 1))}.border-emerald-100{--tw-border-opacity:1;border-color:rgb(209 250 229 / var(--tw-border-opacity, 1))}.border-emerald-50{--tw-border-opacity:1;border-color:rgb(236 253 245 / var(--tw-border-opacity, 1))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.bg-accent-green{--tw-bg-opacity:1;background-color:rgb(45 90 39 / var(--tw-bg-opacity, 1))}.bg-accent-green\/30{background-color:rgb(45 90 39 / 0.3)}.bg-emerald-100{--tw-bg-opacity:1;background-color:rgb(209 250 229 / var(--tw-bg-opacity, 1))}.bg-emerald-400{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.bg-emerald-50{--tw-bg-opacity:1;background-color:rgb(236 253 245 / var(--tw-bg-opacity, 1))}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-emerald-800\/30{background-color:rgb(6 95 70 / 0.3)}.bg-emerald-900{--tw-bg-opacity:1;background-color:rgb(6 78 59 / var(--tw-bg-opacity, 1))}.bg-organic-beige{--tw-bg-opacity:1;background-color:rgb(253 250 245 / var(--tw-bg-opacity, 1))}.bg-tech-green{--tw-bg-opacity:1;background-color:rgb(27 48 34 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-white\/5{background-color:rgb(255 255 255 / 0.05)}.p-12{padding:3rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-1{padding-bottom:0.25rem}.pb-20{padding-bottom:5rem}.pt-32{padding-top:8rem}.text-center{text-align:center}.font-sans{font-family:Inter, sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-accent-green{--tw-text-opacity:1;color:rgb(45 90 39 / var(--tw-text-opacity, 1))}.text-emerald-100\/60{color:rgb(209 250 229 / 0.6)}.text-emerald-100\/70{color:rgb(209 250 229 / 0.7)}.text-emerald-200{--tw-text-opacity:1;color:rgb(167 243 208 / var(--tw-text-opacity, 1))}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183 / var(--tw-text-opacity, 1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-emerald-400\/50{color:rgb(52 211 153 / 0.5)}.text-emerald-50\/60{color:rgb(236 253 245 / 0.6)}.text-emerald-50\/80{color:rgb(236 253 245 / 0.8)}.text-emerald-500{--tw-text-opacity:1;color:rgb(16 185 129 / var(--tw-text-opacity, 1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105 / var(--tw-text-opacity, 1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-tech-green{--tw-text-opacity:1;color:rgb(27 48 34 / var(--tw-text-opacity, 1))}.text-tech-green\/80{color:rgb(27 48 34 / 0.8)}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.opacity-10{opacity:0.1}.opacity-20{opacity:0.2}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-emerald-900\/20{--tw-shadow-color:rgb(6 78 59 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-shadow{transition-property:box-shadow;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:border-tech-green:hover{--tw-border-opacity:1;border-color:rgb(27 48 34 / var(--tw-border-opacity, 1))}.hover\:bg-accent-green:hover{--tw-bg-opacity:1;background-color:rgb(45 90 39 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-400:hover{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-50:hover{--tw-bg-opacity:1;background-color:rgb(236 253 245 / var(--tw-bg-opacity, 1))}.hover\:bg-white\/20:hover{background-color:rgb(255 255 255 / 0.2)}.hover\:text-accent-green:hover{--tw-text-opacity:1;color:rgb(45 90 39 / var(--tw-text-opacity, 1))}.hover\:text-tech-green:hover{--tw-text-opacity:1;color:rgb(27 48 34 / var(--tw-text-opacity, 1))}.hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-emerald-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(16 185 129 / var(--tw-ring-opacity, 1))}@media (min-width: 640px){.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}}@media (min-width: 768px){.md\:order-1{order:1}.md\:order-2{order:2}.md\:flex{display:flex}.md\:w-1\/3{width:33.333333%}.md\:w-2\/3{width:66.666667%}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:pb-32{padding-bottom:8rem}.md\:pt-48{padding-top:12rem}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}.md\:text-6xl{font-size:3.75rem;line-height:1}}</style></head>
-<body class="bg-organic-beige text-slate-800 font-sans leading-relaxed">
 
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 glass-card border-b border-emerald-100">
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Tiberiu Draghici",
+      "honorificPrefix": "Dr. Ing.",
+      "jobTitle": "Expert tehnic agricol",
+      "description": "Doctor inginer, specialist in teledetectie agricola, analiza GIS, evaluare daune si studii de fezabilitate pentru agricultura.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sibiu",
+        "addressRegion": "Sibiu",
+        "addressCountry": "RO"
+      },
+      "telephone": "+40724612815",
+      "email": "drgtiberiu@gmail.com",
+      "url": "https://tiberiudraghici.github.io",
+      "image": "https://tiberiudraghici.github.io/Prezentare.jpg",
+      "areaServed": "Regiunea Centru, Romania",
+      "knowsAbout": ["Teledetectie agricola", "GIS", "UAV", "Studii de fezabilitate", "Evaluare daune agricole", "Agricultura de precizie", "IoT agricol"]
+    }
+    </script>
+</head>
+
+<body class="bg-organic-beige text-slate-800 leading-relaxed">
+
+    <!-- NAVIGATIE -->
+    <nav class="fixed w-full z-50 glass-card border-b border-emerald-100" aria-label="Navigatie principala">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
-                <div class="w-8 h-8 bg-accent-green rounded-full flex items-center justify-center text-white font-bold text-xs">TD</div>
+                <div class="w-8 h-8 bg-accent-green rounded-full flex items-center justify-center text-white font-bold text-xs" aria-hidden="true">TD</div>
                 <span class="font-bold text-accent-green tracking-tight">Dr. Ing. Tiberiu Drăghici</span>
             </div>
-            <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-wider text-accent-green/80">
-                <a href="#expertise" class="hover:text-accent-green transition-colors">Expertiză</a>
-                <a href="#asigurari" class="hover:text-accent-green transition-colors">Asigurări</a>
-                <a href="#consultanta" class="hover:text-accent-green transition-colors">Consultanță EU</a>
-                <a href="#contact" class="px-4 py-2 bg-accent-green text-white rounded-lg hover:bg-emerald-600 transition-all">Contact</a>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-wider text-accent-green">
+                <a href="#instrumente" class="hover:text-tech-green transition-colors py-1 border-b-2 border-transparent hover:border-accent-green">Instrumente</a>
+                <a href="#servicii" class="hover:text-tech-green transition-colors py-1 border-b-2 border-transparent hover:border-accent-green">Servicii</a>
+                <a href="#contact" class="px-5 py-2 bg-accent-green text-white rounded-lg hover:bg-tech-green transition-all">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="relative pt-32 pb-20 md:pt-48 md:pb-32 hero-gradient overflow-hidden">
-        <div class="absolute inset-0 opacity-10">
+    <!-- HERO -->
+    <header class="relative pt-32 pb-20 md:pt-44 md:pb-32 hero-gradient overflow-hidden" itemscope itemtype="https://schema.org/Person">
+        <div class="absolute inset-0 opacity-10" aria-hidden="true">
             <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <path d="M0 100 C 20 0 50 0 100 100 Z" fill="white"></path>
+                <path d="M0 100 C 20 0 50 0 100 100 Z" fill="white"/>
             </svg>
         </div>
+        <div class="absolute -right-4 -top-4 w-48 h-48 md:w-96 md:h-96 bg-accent-green/20 rounded-full blur-3xl" aria-hidden="true"></div>
+
         <div class="max-w-7xl mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-12 items-center">
             <div>
-                <span class="inline-block px-3 py-1 bg-accent-green/30 text-emerald-200 text-xs font-bold uppercase tracking-widest rounded-full mb-6">Agriculture 4.0 &amp; Tech Specialist</span>
-                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-                    Inovație Științifică pentru <span class="text-emerald-400">Agricultura Viitorului</span>
+                <span class="inline-block px-3 py-1 bg-white/10 text-emerald-200 text-xs font-bold uppercase tracking-widest rounded-full mb-6 border border-white/20">Expert tehnic agricol · Sibiu</span>
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight serif" itemprop="name">
+                    Expertiză tehnică pentru <em class="text-emerald-400 not-italic">agricultura românească</em>
                 </h1>
-                <p class="text-lg text-emerald-50/80 mb-10 max-w-xl">
-                   Analiză tehnică și diagnoză agronomică bazată pe date exacte. Expertiză doctorală axată pe reziliența culturilor la factori climatici. Suport științific specializat pentru regularizarea daunelor în asigurări și studii de fezabilitate.
+                <p class="text-lg text-emerald-50/80 mb-10 max-w-xl" itemprop="description">
+                    Diagnoză agronomică bazată pe date exacte — teledetecție UAV, GIS și IoT. Evaluare daune agricole și furnizare de capitole tehnice în studii de fezabilitate și expertize agricole.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#contact" class="px-8 py-4 bg-emerald-500 text-white font-bold rounded-xl text-center hover:bg-emerald-400 transition-all shadow-lg shadow-emerald-900/20">Solicită Colaborare</a>
-                    <a href="#expertise" class="px-8 py-4 bg-white/10 text-white font-bold rounded-xl text-center border border-white/20 hover:bg-white/20 transition-all backdrop-blur-sm">Vezi Servicii</a>
+                    <a href="#contact" class="px-8 py-4 bg-emerald-500 text-white font-bold rounded-xl text-center hover:bg-emerald-400 transition-all shadow-lg shadow-emerald-900/20">Solicită colaborare</a>
+                    <a href="#servicii" class="px-8 py-4 bg-white/10 text-white font-bold rounded-xl text-center border border-white/20 hover:bg-white/20 transition-all backdrop-blur-sm">Descoperă serviciile</a>
                 </div>
             </div>
             <div class="relative">
-                <div class="aspect-square bg-emerald-800/30 rounded-3xl border border-white/10 p-4 relative overflow-hidden group">
-                    <!-- Expert Profile Image -->
+                <div class="aspect-square bg-emerald-800/30 rounded-3xl border border-white/10 p-4 relative overflow-hidden">
                     <div class="w-full h-full rounded-2xl overflow-hidden bg-tech-green">
-                        <img src="Prezentare.jpg" alt="Dr. Ing. Tiberiu Drăghici" class="w-full h-full object-cover">
+                        <img
+                            src="Prezentare.jpg"
+                            alt="Dr. Ing. Tiberiu Drăghici, expert tehnic agricol din Sibiu"
+                            width="600"
+                            height="600"
+                            loading="eager"
+                            class="w-full h-full object-cover"
+                            itemprop="image"
+                        >
                     </div>
-                    <div class="absolute bottom-8 left-8 right-8 glass-card p-6 rounded-2xl">
-                        <div class="flex items-center space-x-4">
-                            <div class="text-accent-green">
-                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path></svg>
-                            </div>
-                            <div>
-                                <p class="text-xs font-bold uppercase text-emerald-700">Specialistul tău în agricultură și digitalizare</p>
+                        <div class="absolute bottom-8 left-8 right-8 glass-card p-4 rounded-2xl">
+                            <div class="flex justify-center items-center">
+                                <p class="text-xs font-bold uppercase tracking-wider text-accent-green text-center"> Specialistul tău în agricultură și digitalizare</p>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Stats/Trust -->
-    <section class="py-12 bg-white">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div class="text-center">
-                <p class="text-3xl font-bold text-tech-green mb-1">PhD</p>
-                <p class="text-xs font-bold text-emerald-600 uppercase tracking-widest">Studii Științifice</p>
-            </div>
-            <div class="text-center border-l border-slate-100">
-                <p class="text-3xl font-bold text-tech-green mb-1">UAV</p>
-                <p class="text-xs font-bold text-emerald-600 uppercase tracking-widest">Pilot Certificat A1/A3-A2</p>
-            </div>
-            <div class="text-center border-l border-slate-100">
-                <p class="text-3xl font-bold text-tech-green mb-1">GIS</p>
-                <p class="text-xs font-bold text-emerald-600 uppercase tracking-widest">Analiză Geospațială</p>
-            </div>
-            <div class="text-center border-l border-slate-100">
-                <p class="text-3xl font-bold text-tech-green mb-1">IoT</p>
-                <p class="text-xs font-bold text-emerald-600 uppercase tracking-widest">Senzoristică Agri</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Expertise Section -->
-    <section id="expertise" class="py-24 bg-organic-beige">
+    <!-- INSTRUMENTE -->
+    <section id="instrumente" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-tech-green mb-4">Expertiză Tehnică &amp; Științifică</h2>
-                <div class="w-20 h-1 bg-accent-green mx-auto mb-8"></div>
-                <p class="max-w-3xl mx-auto text-slate-600">
-                    Integrarea metodologiilor de cercetare academică în fluxuri de lucru bazate pe teledetecție și IoT pentru generarea unor diagnoze agronomice de înaltă precizie..
-                </p>
-            </div>
-            
- <div class="grid md:grid-cols-3 gap-8 mb-16">
-    <div class="bg-white p-8 rounded-2xl shadow-sm border border-emerald-50 flex flex-col h-full hover:shadow-md transition-all">
-        <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center text-accent-green mb-6 shrink-0">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
-        </div>
-        <h3 class="text-xl font-bold text-tech-green mb-4">Teledetecție & GIS</h3>
-        <p class="text-sm text-slate-600 flex-grow">
-           Achiziția și procesarea datelor multispectrale UAV pentru cartografierea variabilității și identificarea zonelor de stres.
-        </p>
-    </div>
-
-    <div class="bg-white p-8 rounded-2xl shadow-sm border border-emerald-50 flex flex-col h-full hover:shadow-md transition-all">
-        <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center text-accent-green mb-6 shrink-0">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-        </div>
-        <h3 class="text-xl font-bold text-tech-green mb-4">Diagnoză Agronomică</h3>
-        <p class="text-sm text-slate-600 flex-grow">
-            Monitorizarea stării de vegetație prin IoT și interpretarea indicilor fiziologici pentru optimizarea aplicării inputurilor.
-        </p>
-    </div>
-
-    <div class="bg-white p-8 rounded-2xl shadow-sm border border-emerald-50 flex flex-col h-full hover:shadow-md transition-all">
-        <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center text-accent-green mb-6 shrink-0">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
-        </div>
-        <h3 class="text-xl font-bold text-tech-green mb-4">Cercetare Aplicată</h3>
-        <p class="text-sm text-slate-600 flex-grow">
-            Fundamentarea rezilienței la stres abiotic prin modelarea matematică a bilanțului de mediu.
-        </p>
-    </div>
-</div>
-
-            <div class="flex flex-col md:flex-row items-center justify-between p-8 bg-accent-green rounded-3xl text-white gap-6 shadow-lg shadow-emerald-900/10">
-                <button onclick="document.getElementById('contact').scrollIntoView();" class="px-8 py-4 bg-white text-accent-green font-bold rounded-xl hover:bg-emerald-50 transition-all text-sm uppercase tracking-wider whitespace-nowrap min-w-[220px]">Solicită Expertiză →</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services for Insurance -->
-    <section id="asigurari" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-tech-green mb-4">Expertiză Tehnică pentru Companii de Asigurări</h2>
-                <div class="w-20 h-1 bg-accent-green mx-auto mb-8"></div>
-                <p class="max-w-3xl mx-auto text-slate-600">
-                    Evaluarea impactului abiotic prin diagnoză fiziologică și teledetecție constituie fundamentul tehnic pentru procedurile de regularizare și auditare a daunelor agricole.
+            <div class="text-center mb-12 fade-up">
+                <p class="text-xs font-bold uppercase tracking-widest text-emerald-600 mb-3">Dotare tehnică &amp; academică</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-tech-green serif mb-4">Instrumente și competențe</h2>
+                <div class="section-line"></div>
+                <p class="max-w-2xl mx-auto text-slate-600">
+                    Metodologii de cercetare academică combinate cu platforme moderne de teledetecție și senzoristică pentru diagnoze agronomice de înaltă precizie.
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8 mb-16">
-                <!-- Service 1 -->
-                <div class="bg-organic-beige p-8 rounded-2xl border border-emerald-50 hover:shadow-md transition-shadow">
-                    <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center text-accent-green mb-6">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+                <div class="instrument-badge rounded-2xl p-6 text-center fade-up">
+                    <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-accent-green mx-auto mb-3" aria-hidden="true">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
                     </div>
-                    <h3 class="text-xl font-bold text-tech-green mb-4">Evaluare Fenomene</h3>
-                    <p class="text-sm text-slate-600">Evaluarea riguroasă a daunelor cauzate de secetă, arșiță, grindină sau îngheț, utilizând metodologii științifice.</p>
+                    <p class="text-2xl font-bold text-tech-green serif mb-1">PhD</p>
+                    <p class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Doctorat în agronomie</p>
                 </div>
-                <!-- Service 2 -->
-                <div class="bg-organic-beige p-8 rounded-2xl border border-emerald-50 hover:shadow-md transition-shadow">
-                    <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center text-accent-green mb-6">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                <div class="instrument-badge rounded-2xl p-6 text-center fade-up">
+                    <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-accent-green mx-auto mb-3" aria-hidden="true">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
                     </div>
-                    <h3 class="text-xl font-bold text-tech-green mb-4">Analiză Regenerare</h3>
-                    <p class="text-sm text-slate-600">Determinarea corectă a capacității de regenerare a culturilor și estimarea precisă a pierderilor reale de producție.</p>
+                    <p class="text-2xl font-bold text-tech-green serif mb-1">UAV</p>
+                    <p class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Pilot certificat A1/A3-A2</p>
                 </div>
-                <!-- Service 3 -->
-                <div class="bg-organic-beige p-8 rounded-2xl border border-emerald-50 hover:shadow-md transition-shadow">
-                    <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center text-accent-green mb-6">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                <div class="instrument-badge rounded-2xl p-6 text-center fade-up">
+                    <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-accent-green mx-auto mb-3" aria-hidden="true">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
                     </div>
-                    <h3 class="text-xl font-bold text-tech-green mb-4">Documentație Tehnică</h3>
-                    <p class="text-sm text-slate-600">Întocmire documentație tehnică și rapoarte de constatare conform normelor specifice și cerințelor de asigurare.</p>
+                    <p class="text-2xl font-bold text-tech-green serif mb-1">GIS</p>
+                    <p class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Analiză geospațială</p>
                 </div>
-            </div>
-
-            <div class="flex flex-col md:flex-row items-center justify-between p-8 bg-accent-green rounded-3xl text-white gap-6 shadow-lg shadow-emerald-900/10">
-                <div class="flex items-center space-x-4">
-                    <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
-                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                <div class="instrument-badge rounded-2xl p-6 text-center fade-up">
+                    <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-accent-green mx-auto mb-3" aria-hidden="true">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                     </div>
-                    <div>
-                        <p class="text-xs font-bold uppercase tracking-widest text-emerald-200">Aria de acoperire</p>
-                        <p class="font-bold">Expertiză daune agricole în Regiunea Centru</p>
-                    </div>
-                </div>
-                <a href="#contact" class="px-8 py-4 bg-white text-accent-green font-bold rounded-xl hover:bg-emerald-50 transition-all text-sm uppercase tracking-wider whitespace-nowrap min-w-[220px] text-center">Solicită constatare →</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services for Consultancy -->
-    <section id="consultanta" class="py-24 bg-emerald-50">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-tech-green mb-4">Consultanță pentru Proiecte Europene &amp; Inovație</h2>
-                <div class="w-20 h-1 bg-accent-green mx-auto mb-8"></div>
-                <p class="max-w-3xl mx-auto text-slate-600">
-                    Fundamentarea științifică a documentațiilor de investiții prin analiză geospațială și modelarea scenariilor de producție în contextul variabilității climatice.
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8 mb-16">
-                <!-- Service 1 -->
-                <div class="bg-white p-8 rounded-2xl border border-emerald-100 shadow-sm hover:shadow-md transition-all">
-                    <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center text-accent-green mb-6">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
-                    </div>
-                    <h4 class="text-xl font-bold text-tech-green mb-4">Fundamentare Științifică</h4>
-                    <p class="text-sm text-slate-600">Studii de mediu, reziliență climatică și documentații tehnice pentru culturi vegetale și proiecte de mediu.</p>
-                </div>
-                <!-- Service 2 -->
-                <div class="bg-white p-8 rounded-2xl border border-emerald-100 shadow-sm hover:shadow-md transition-all">
-                    <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center text-accent-green mb-6">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    </div>
-                    <h4 class="text-xl font-bold text-tech-green mb-4">Tehnologii de Precizie</h4>
-                    <p class="text-sm text-slate-600">Expertiză în sisteme de monitorizare, irigare controlată și automatizări agricole integrate în proiecte inovatoare.</p>
-                </div>
-                <!-- Service 3 -->
-                <div class="bg-white p-8 rounded-2xl border border-emerald-100 shadow-sm hover:shadow-md transition-all">
-                    <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center text-accent-green mb-6">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                    </div>
-                    <h4 class="text-xl font-bold text-tech-green mb-4">Rapoarte de Specialitate</h4>
-                    <p class="text-sm text-slate-600">Analiză tehnică specializată și rapoarte pentru evaluarea soluțiilor agricole în contextul schimbărilor climatice.</p>
+                    <p class="text-2xl font-bold text-tech-green serif mb-1">IoT</p>
+                    <p class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Senzoristică agri</p>
                 </div>
             </div>
 
-            <div class="flex flex-col md:flex-row items-center justify-between p-8 bg-accent-green rounded-3xl text-white gap-6 shadow-lg shadow-emerald-900/10">
-              
-                <button onclick="document.getElementById('contact').scrollIntoView();" class="px-8 py-4 bg-white text-accent-green font-bold rounded-xl hover:bg-emerald-50 transition-all uppercase tracking-wider text-sm whitespace-nowrap min-w-[220px]">Propune o colaborare →</button>
+            <!-- Ce livrez concret -->
+            <div class="bg-organic-beige rounded-3xl p-8 md:p-12 fade-up">
+                <div class="flex flex-col md:flex-row gap-8 items-start">
+                     <div class="md:w-1/3 flex flex-col items-center justify-center text-center self-stretch">
+                         <h3 class="text-3xl font-bold text-tech-green serif">Livrabile</h3>
+                    </div>
+                    <div class="md:w-2/3 grid sm:grid-cols-2 gap-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-5 h-5 bg-emerald-100 rounded-full flex items-center justify-center shrink-0 mt-0.5" aria-hidden="true">
+                                <div class="w-2 h-2 bg-accent-green rounded-full"></div>
+                            </div>
+                            <p class="text-sm text-slate-700">Caracterizare climatică și evaluare risc abiotic</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-5 h-5 bg-emerald-100 rounded-full flex items-center justify-center shrink-0 mt-0.5" aria-hidden="true">
+                                <div class="w-2 h-2 bg-accent-green rounded-full"></div>
+                            </div>
+                            <p class="text-sm text-slate-700">Evaluarea tehnologiei de producție propuse</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-5 h-5 bg-emerald-100 rounded-full flex items-center justify-center shrink-0 mt-0.5" aria-hidden="true">
+                                <div class="w-2 h-2 bg-accent-green rounded-full"></div>
+                            </div>
+                            <p class="text-sm text-slate-700">Capitol agronomic pentru studii de fezabilitate</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-5 h-5 bg-emerald-100 rounded-full flex items-center justify-center shrink-0 mt-0.5" aria-hidden="true">
+                                <div class="w-2 h-2 bg-accent-green rounded-full"></div>
+                            </div>
+                            <p class="text-sm text-slate-700">Hărți multispectrale și indici de vegetație</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-5 h-5 bg-emerald-100 rounded-full flex items-center justify-center shrink-0 mt-0.5" aria-hidden="true">
+                                <div class="w-2 h-2 bg-accent-green rounded-full"></div>
+                            </div>
+                            <p class="text-sm text-slate-700">Rapoarte de constatare daune pentru asigurători</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-5 h-5 bg-emerald-100 rounded-full flex items-center justify-center shrink-0 mt-0.5" aria-hidden="true">
+                                <div class="w-2 h-2 bg-accent-green rounded-full"></div>
+                            </div>
+                            <p class="text-sm text-slate-700">Modelare matematică a bilanțului de mediu</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-organic-beige">
+    <!-- SERVICII -->
+    <section id="servicii" class="py-24 bg-organic-beige">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="bg-white rounded-3xl shadow-xl overflow-hidden flex flex-col md:flex-row">
-                <div class="bg-accent-green p-12 text-white md:w-1/3">
-                    <h2 class="text-3xl font-bold mb-8">Să discutăm despre proiectul tău</h2>
-                    <p class="text-emerald-50/80 mb-12">Disponibil pentru deplasări în Regiunea Centru pentru constatări în teren și consultanță tehnică.</p>
-                    
-                    <div class="space-y-6">
-                        <div class="flex items-center space-x-4">
-                            <div class="text-emerald-300">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+            <div class="self-center mb-16 fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-tech-green serif mb-1 text-center w-full"> Servicii </h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Serviciu 1: Asigurări -->
+                <article class="service-card bg-white rounded-2xl overflow-hidden border border-emerald-50 flex flex-col fade-up">
+                    <div class="bg-accent-green p-6">
+                        <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-4" aria-hidden="true">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white serif">Evaluare daune agricole</h3>
+                        <p class="text-emerald-200 text-sm mt-2">Pentru companii de asigurări</p>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <p class="text-slate-600 text-sm mb-6 flex-grow text-justify">
+                            Evaluarea riguroasă a daunelor cauzate de secetă, arșiță, grindină sau îngheț prin metodologii științifice. Includ determinarea capacității de regenerare și estimarea pierderilor reale de producție.
+                        </p>
+                        <ul class="space-y-2 text-sm text-slate-600 mb-8">
+                            <li class="flex items-center space-x-2"><span class="w-1.5 h-1.5 bg-emerald-400 rounded-full shrink-0" aria-hidden="true"></span><span>Diagnoză fiziologică și teledetecție</span></li>
+                            <li class="flex items-center space-x-2"><span class="w-1.5 h-1.5 bg-emerald-400 rounded-full shrink-0" aria-hidden="true"></span><span>Rapoarte de constatare conforme normelor</span></li>
+                            <li class="flex items-center space-x-2"><span class="w-1.5 h-1.5 bg-emerald-400 rounded-full shrink-0" aria-hidden="true"></span><span>Deplasare în teren · Regiunea Centru</span></li>
+                        </ul>
+                        <a href="#contact" class="block w-full py-3 bg-accent-green text-white font-bold rounded-xl text-center text-sm hover:bg-tech-green transition-all">Solicită constatare</a>
+                    </div>
+                </article>
+
+                <!-- Serviciu 2: Studii de fezabilitate -->
+                <article class="service-card bg-white rounded-2xl overflow-hidden border border-emerald-50 flex flex-col fade-up">
+                    <div class="bg-tech-green p-6">
+                        <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-4" aria-hidden="true">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white serif">Capitol tehnic în studii de fezabilitate</h3>
+                        <p class="text-emerald-300 text-sm mt-2">Pentru firme de consultanță &amp; proiectanți</p>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <p class="text-slate-600 text-sm mb-6 flex-grow text-justify">
+                            Furnizez capitolul agronomic tehnic pentru documentații de investiții (PNRR, AFIR, fonduri private). Analiză geospațială, caracterizare pedoclimatică și evaluarea tehnologiei propuse.
+                        </p>
+                        <ul class="space-y-2 text-sm text-slate-600 mb-8">
+                            <li class="flex items-center space-x-2"><span class="w-1.5 h-1.5 bg-emerald-400 rounded-full shrink-0" aria-hidden="true"></span><span>Caracterizare climatică &amp; risc abiotic</span></li>
+                            <li class="flex items-center space-x-2"><span class="w-1.5 h-1.5 bg-emerald-400 rounded-full shrink-0" aria-hidden="true"></span><span>Evaluarea tehnologiei de producție</span></li>
+                            <li class="flex items-center space-x-2"><span class="w-1.5 h-1.5 bg-emerald-400 rounded-full shrink-0" aria-hidden="true"></span><span>Modele de producție &amp; scenarii climatice</span></li>
+                        </ul>
+                        <a href="#contact" class="block w-full py-3 bg-tech-green text-white font-bold rounded-xl text-center text-sm hover:bg-accent-green transition-all">Propune colaborare</a>
+                    </div>
+                </article>
+
+                <!-- Serviciu 3: Teledetectie & cercetare -->
+                <article class="service-card bg-white rounded-2xl overflow-hidden border border-emerald-50 flex flex-col fade-up">
+                    <div style="background: linear-gradient(135deg, #2d5a27, #c5a059)" class="p-6">
+                        <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-4" aria-hidden="true">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white serif">Teledetecție UAV &amp; cercetare aplicată</h3>
+                        <p class="text-white/70 text-sm mt-2">Pentru fermieri, cercetători &amp; ONG-uri</p>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <p class="text-slate-600 text-sm mb-6 flex-grow text-justify">
+                            Zboruri UAV multispectrale, procesare imagini și cartografierea variabilității parcelelor. Identificarea zonelor de stres și optimizarea aplicării inputurilor bazată pe date reale.
+                        </p>
+                        <ul class="space-y-2 text-sm text-slate-600 mb-8">
+                            <li class="flex items-center space-x-2"><span class="w-1.5 h-1.5 bg-emerald-400 rounded-full shrink-0" aria-hidden="true"></span><span>Hărți NDVI și indici de vegetație</span></li>
+                            <li class="flex items-center space-x-2"><span class="w-1.5 h-1.5 bg-emerald-400 rounded-full shrink-0" aria-hidden="true"></span><span>Monitorizare IoT și senzorică agricolă</span></li>
+                            <li class="flex items-center space-x-2"><span class="w-1.5 h-1.5 bg-emerald-400 rounded-full shrink-0" aria-hidden="true"></span><span>Rapoarte de specialitate &amp; cercetare</span></li>
+                        </ul>
+                        <a href="#contact" class="block w-full py-3 text-accent-green font-bold rounded-xl text-center text-sm border-2 border-accent-green hover:bg-accent-green hover:text-white transition-all">Solicită informații</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-organic-beige rounded-3xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+
+                <div class="bg-accent-green p-10 md:p-12 text-white md:w-2/5">
+                    <h2 class="text-3xl font-bold text-center serif mb-[1cm] mt-[1cm]">CONTACT</h2>
+                        <p class="text-3xl font-bold text-center serif mx-auto mb-[1cm] text-justify md:text-center">
+                            Dr. ing. Tiberiu Drăghici
+                        </p>
+                    <div class="space-y-5">
+                        <a href="tel:+40724612815" class="flex items-center space-x-4 hover:text-emerald-200 transition-colors group" itemprop="telephone">
+                            <div class="w-10 h-10 bg-white/15 rounded-xl flex items-center justify-center group-hover:bg-white/25 transition-all shrink-0" aria-hidden="true">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                             </div>
                             <span class="font-semibold">+40 724 612 815</span>
-                        </div>
-                        <div class="flex items-center space-x-4">
-                            <div class="text-emerald-300">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </a>
+                        <a href="mailto:drgtiberiu@gmail.com" class="flex items-center space-x-4 hover:text-emerald-200 transition-colors group" itemprop="email">
+                            <div class="w-10 h-10 bg-white/15 rounded-xl flex items-center justify-center group-hover:bg-white/25 transition-all shrink-0" aria-hidden="true">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                             </div>
                             <span class="font-semibold">drgtiberiu@gmail.com</span>
-                        </div>
-                        <div class="flex items-center space-x-4">
-                            <div class="text-emerald-300">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </a>
+                        <div class="flex items-center space-x-4" itemprop="address">
+                            <div class="w-10 h-10 bg-white/15 rounded-xl flex items-center justify-center shrink-0" aria-hidden="true">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                             </div>
                             <span class="font-semibold">Sibiu, România</span>
                         </div>
                     </div>
+
+                    <div class="mt-10 pt-8 border-t border-white/20">
+                        <p class="text-xs text-emerald-200 uppercase tracking-widest font-bold mb-2">Arie de acoperire</p>
+                        <p class="text-sm text-emerald-100/80">Deplasări în teren în Regiunea Centru (Sibiu, Brașov, Alba, Mureș, Harghita, Covasna). Studii tehnice în toată țara.</p>
+                    </div>
                 </div>
-                <div class="p-12 md:w-2/3">
-<form action="https://formspree.io/f/mdalwkkz" method="POST" class="space-y-6">
-    <div class="grid sm:grid-cols-2 gap-6">
-        <div>
-            <label class="block text-sm font-bold text-tech-green uppercase tracking-wider mb-2">Nume complet</label>
-            <input type="text" name="nume" required placeholder="Ion Popescu" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all">
-        </div>
-        <div>
-            <label class="block text-sm font-bold text-tech-green uppercase tracking-wider mb-2">Companie</label>
-            <input type="text" name="companie" placeholder="Ex: Companie Asigurari S.A." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all">
-        </div>
-    </div>
-    <div>
-        <label class="block text-sm font-bold text-tech-green uppercase tracking-wider mb-2">Email</label>
-        <input type="email" name="email" required placeholder="contact@companie.ro" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all">
-    </div>
-    <div>
-        <label class="block text-sm font-bold text-tech-green uppercase tracking-wider mb-2">Tip colaborare</label>
-        <select name="tip_colaborare" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all">
-            <option value="Evaluare Daune">Evaluare Daune Agricole</option>
-            <option value="Consultanta EU">Consultanță Proiecte Europene</option>
-            <option value="Digitalizare">Digitalizare & Tehnologie 4.0</option>
-            <option value="Cercetare">Cercetare & Studii Tehnice</option>
-        </select>
-    </div>
-    <div>
-        <label class="block text-sm font-bold text-tech-green uppercase tracking-wider mb-2">Mesaj</label>
-        <textarea name="mesaj" rows="4" required placeholder="Descrieți pe scurt nevoia dumneavoastră..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all"></textarea>
-    </div>
-    <button type="submit" class="w-full py-4 bg-tech-green text-white font-bold rounded-xl hover:bg-accent-green transition-all shadow-lg">Trimite Mesajul</button>
-</form>
+
+                <div class="p-10 md:p-12 md:w-3/5">
+                    <form action="https://formspree.io/f/mdalwkkz" method="POST" class="space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label for="nume" class="block text-sm font-bold text-tech-green uppercase tracking-wider mb-2">Nume complet *</label>
+                                <input type="text" id="nume" name="nume" required placeholder="Ion Popescu" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all text-sm">
+                            </div>
+                            <div>
+                                <label for="companie" class="block text-sm font-bold text-tech-green uppercase tracking-wider mb-2">Companie / Organizație</label>
+                                <input type="text" id="companie" name="companie" placeholder="Ex: Firma de Consultanță S.R.L." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all text-sm">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-bold text-tech-green uppercase tracking-wider mb-2">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="contact@companie.ro" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all text-sm">
+                        </div>
+                        <div>
+                            <label for="tip_colaborare" class="block text-sm font-bold text-tech-green uppercase tracking-wider mb-2">Tip colaborare</label>
+                            <select id="tip_colaborare" name="tip_colaborare" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all text-sm bg-white">
+                                <option value="Evaluare Daune">Evaluare daune agricole</option>
+                                <option value="Studiu Fezabilitate">Capitol tehnic în studiu de fezabilitate</option>
+                                <option value="Teledetectie UAV">Teledetecție UAV &amp; GIS</option>
+                                <option value="Cercetare">Cercetare aplicată &amp; rapoarte de specialitate</option>
+                                <option value="Altele">Altele</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="mesaj" class="block text-sm font-bold text-tech-green uppercase tracking-wider mb-2">Mesaj *</label>
+                            <textarea id="mesaj" name="mesaj" rows="4" required placeholder="Descrieți pe scurt nevoia dumneavoastră, cultura afectată, suprafața și județul..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-all text-sm"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-4 bg-tech-green text-white font-bold rounded-xl hover:bg-accent-green transition-all shadow-lg text-sm uppercase tracking-wider">
+                            Trimite mesajul
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="py-12 border-t border-emerald-100">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <p class="text-tech-green font-bold mb-4">Dr. Ing. Tiberiu Drăghici</p>
-            <p class="text-sm text-slate-500">© 2026. Specialist în Agricultură 4.0 &amp; Tehnologii de Precizie. Toate drepturile rezervate.</p>
+    <!-- FOOTER -->
+    <footer class="py-10 border-t border-emerald-100 bg-organic-beige">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-2">
+                <div class="w-7 h-7 bg-accent-green rounded-full flex items-center justify-center text-white font-bold text-xs" aria-hidden="true">TD</div>
+                <p class="text-tech-green font-bold text-sm">Dr. Ing. Tiberiu Drăghici</p>
+            </div>
+            <p class="text-xs text-slate-400">© 2026 · Expert tehnic agricol · Sibiu, România · Toate drepturile rezervate.</p>
+            <div class="flex space-x-4 text-xs text-slate-400">
+                <a href="tel:+40724612815" class="hover:text-accent-green transition-colors">+40 724 612 815</a>
+                <span aria-hidden="true">·</span>
+                <a href="mailto:drgtiberiu@gmail.com" class="hover:text-accent-green transition-colors">drgtiberiu@gmail.com</a>
+            </div>
         </div>
     </footer>
 
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    </script>
 
-</body></html>
+</body>
+</html>

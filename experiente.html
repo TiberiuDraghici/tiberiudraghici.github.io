@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ro" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiențe & Proiecte | Dr. Ing. Tiberiu Drăghici</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'tech-green': '#1b3022',
+                        'organic-beige': '#fdfaf5',
+                        'accent-green': '#2d5a27',
+                        'soft-gold': '#c5a059',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-organic-beige text-slate-800 font-sans leading-relaxed">
+
+    <nav class="fixed w-full z-50 glass-card border-b border-emerald-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-accent-green rounded-full flex items-center justify-center text-white font-bold text-xs">TD</div>
+                <span class="font-bold text-accent-green tracking-tight">Dr. Ing. Tiberiu Drăghici</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-wider text-accent-green/80 items-center">
+                <a href="index.html" class="hover:text-accent-green transition-colors">Acasă</a>
+                <a href="experiente.html" class="text-accent-green font-bold border-b-2 border-accent-green pb-1">Experiențe</a>
+                <a href="index.html#contact" class="px-4 py-2 bg-accent-green text-white rounded-lg hover:bg-emerald-600 transition-all">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-16 bg-white border-b border-emerald-50">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-tech-green mb-6">Portofoliu de experiențe</h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                O privire detaliată asupra proiectelor și experiențelor în care am fost antrenat de-a lungul aniilor.
+            </p>
+        </div>
+    </header>
+
+    <section class="py-20 bg-organic-beige">
+    <div class="max-w-6xl mx-auto px-6 space-y-16">
+<!--PlatformaAI-->
+        <div class="w-full bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-emerald-50">
+            <div class="text-center mb-8">
+                <span class="inline-block px-4 py-1 bg-emerald-50 text-emerald-600 text-sm font-bold rounded-full mb-3">2026</span>
+                <h3 class="text-2xl md:text-3xl font-bold text-tech-green">Platformă de Predicție Multi-Risc pentru specia <i class="italic">Malus domestica</i></h3>
+            </div>
+            
+            <div class="space-y-4 text-slate-600 text-base mb-10 max-w-4xl mx-auto">
+                <p class="text-justify">
+                    <a href="https://saiapmtibi.github.io/ferma/" target="_blank" class="text-accent-green hover:text-emerald-500 font-semibold underline transition-colors">Platforma de Predicție Multi-Risc pentru specia <i class="italic">Malus domestica</i></a> 
+                    este un sistem de agricultură de precizie fundamentat pe o Arhitectură Neuro-Simbolică. Aceasta transformă datele brute de microclimat și prognoză în decizii agronomice proactive, operând printr-un pipeline de date pe 5 niveluri. Sistemul separă rigurozitatea 
+                    matematică de capacitatea de sinteză: procesează determinist telemetria prin modele validate științific (Nivelul Simbolic), iar ulterior utilizează un motor de Inteligență Artificială Generativă (Nivelul Cognitiv) pentru a formula recomandări în limbaj natural. 
+                    Platforma anticipează presiunea patogenilor, dinamica dăunătorilor și impactul stresului abiotic, calibrând constant predicțiile printr-o buclă de validare din teren (Ground-Truth). Datele sunt distribuite în 4 module de expertiză, permițând optimizarea 
+                    ferestrelor de intervenție, managementul integrat al livezii și reducerea amprentei chimice.
+                </p>
+            </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-1 gap-4">
+                <img src="PPMR\PPMR.png" class="w-full h-48 md:h-64 object-contain bg-white rounded-xl border border-slate-100">
+            </div>
+        </div>
+<!--ArduFarm-->
+        <div class="w-full bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-emerald-50">
+            <div class="text-center mb-8">
+                <span class="inline-block px-4 py-1 bg-emerald-50 text-emerald-600 text-sm font-bold rounded-full mb-3">2026</span>
+                <h3 class="text-2xl md:text-3xl font-bold text-tech-green">Atelier ArduFarm</h3>
+            </div>
+            
+            <div class="space-y-4 text-slate-600 text-base mb-10 max-w-4xl mx-auto">
+                <p class="text-justify">
+                    Atelierul ArduFarm din cadrul evenimentului EduLabFarm transformă elevii de liceu în arhitecți ai tehnologiei agricole, explorând convergența dintre electronică și agronomie. 
+                    Prin implementarea a patru sisteme critice — monitorizarea microclimatului, analiza calității aerului, automatizarea irigațiilor și senzori termici de precizie — participanții învață 
+                    să utilizeze microcontrolerele Arduino și NodeMCU pentru a optimiza resursele unei ferme moderne. Este o experiență practică care dezvoltă competențe esențiale în programare, electronică 
+                    și gândire logică, pregătind tinerii pentru viitorul digitalizat al industriei agro. 
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-4 gap-4">
+                <img src="ArduFarm/ArduFarm1.JPG" class="w-full h-48 md:h-64 object-contain bg-white rounded-xl border border-slate-100">
+                <img src="ArduFarm/ArduFarm7.JPG" class="w-full h-48 md:h-64 object-contain bg-white rounded-xl border border-slate-100">
+                <img src="ArduFarm/ArduFarm5.JPG" class="w-full h-48 md:h-64 object-contain bg-white rounded-xl border border-slate-100">
+                <img src="ArduFarm/ArduFarm6.JPG" class="w-full h-48 md:h-64 object-contain bg-white rounded-xl border border-slate-100">
+            </div>
+        </div>
+<!--Teza-->
+        <div class="w-full bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-emerald-50">
+            <div class="text-center mb-8">
+                <span class="inline-block px-4 py-1 bg-emerald-50 text-emerald-600 text-sm font-bold rounded-full mb-3">2025</span>
+                <h3 class="text-2xl md:text-3xl font-bold text-tech-green">Platformă de pre-screening pentru fenotiparea stresului hidric la cartof</h3>
+            </div>
+            
+            <div class="space-y-4 text-slate-600 text-base mb-10 max-w-4xl mx-auto">
+                <p class="text-justify">
+                    Proiectul a vizat dezvoltarea și validarea unei platforme de fenotipare IoT cu costuri reduse, destinată pre-screening-ului toleranței la secetă la cartof. 
+                    Sistemul integrează controlul automatizat al irigării, gestionat printr-o arhitectură Arduino cu senzori capacitivi multiplexați (6 senzori/linie) — și monitorizarea microclimatului în timp real via ESP8266. 
+                    Un algoritm de tip mașină de stări asigură menținerea precisă a pragurilor de umiditate a solului (60% optim vs. 35% stres). Validarea experimentală a confirmat capacitatea platformei de a induce un stres hidric reproductibil și de a discrimina statistic 
+                    răspunsurile fiziologice (fracția de substanță uscată) între genotipuri contrastante. Soluția dezvoltată reprezintă un instrument metodologic robust și scalabil, optimizând selecția preliminară a soiurilor anterior testărilor agronomice de câmp.
+                </p>
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <img src="Teza/Teza_automatizarec.jpg" alt="Descriere" class="w-full h-48 md:h-64 object-contain bg-white rounded-xl border border-slate-100">
+                <img src="Teza/Teza_ui.jpg" alt="Descriere" class="w-full h-48 md:h-64 object-contain bg-white rounded-xl border border-slate-100">
+            </div>
+        </div>
+<!--Drone -->
+        <div class="w-full bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-emerald-50">
+            <div class="text-center mb-8">
+                <span class="inline-block px-4 py-1 bg-emerald-50 text-emerald-600 text-sm font-bold rounded-full mb-3">2024-2025</span>
+                <h3 class="text-2xl md:text-3xl font-bold text-tech-green">Tehnologii 4.0 (FDI 2024 F0060; FDI 2025 F0383)</h3>
+            </div>
+            
+            <div class="space-y-4 text-slate-600 text-base mb-10 max-w-4xl mx-auto">
+                <p class="text-justify">
+                    Proiectul a avut ca scop creșterea competitivității bazei de practică a studenților prin inovare și integrarea tehnologiilor specifice Agriculturii 4.0 la standarde de performanță. 
+                    Activitatea s-a bazat pe instruirea practică în zona de topometrie și fotogrammetrie (UAV-uri, sisteme de ghidaj GPS, stație totală). 
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <img src="Training drone/DJI_Agras.jpg" class="w-full h-48 md:h-64 object-contain bg-white rounded-xl border border-slate-100">
+                <img src="Training drone/Drona_Studenti.jpeg" class="w-full h-48 md:h-64 object-contain bg-white rounded-xl border border-slate-100">
+                <img src="Training drone/Statietotala.jpeg" class="w-full h-48 md:h-64 object-contain bg-white rounded-xl border border-slate-100">
+            </div>
+        </div>
+<!--Solar -->
+        <div class="w-full bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-emerald-50">
+            <div class="text-center mb-8">
+                <span class="inline-block px-4 py-1 bg-emerald-50 text-emerald-600 text-sm font-bold rounded-full mb-3">2024</span>
+                <h3 class="text-2xl md:text-3xl font-bold text-tech-green">Prototipare solar inteligent</h3>
+            </div>
+            
+            <div class="space-y-4 text-slate-600 text-base mb-10 max-w-4xl mx-auto">
+                <p class="text-justify">
+                  Proiectarea și construcția prototipului de solar inteligent a avut ca obiectiv demonstrarea integrării tehnologiilor IoT managementul spațiilor protejate. 
+                  Sistemul este coordonat de un microcontroler cu conectivitate Wi-Fi, care achiziționează în timp real date privind microclimatul prin intermediul unor senzori.
+                  Parametrii sunt transmiși către o interfață mobilă dezvoltată în platforma Node-RED, care oferă telemetrie și permite controlul de la distanță al proceselor. Partea de execuție cuprinde automatizarea irigării printr-o micropompă.
+                  Acest model funcțional validează capacitatea de a proiecta o arhitectură hardware-software completă, de la preluarea datelor brute la acționarea mecanică și monitorizarea în cloud, aplicabilă direct în agricultura de precizie.  
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <img src="Pototip solar/PrototipSolar.jpeg" class="w-full h-48 md:h-64 object-contain bg-white rounded-xl border border-slate-100">
+                <img src="Pototip solar/PrototipSolar_ui.jpg" class="w-full h-48 md:h-64 object-contain bg-white rounded-xl border border-slate-100">
+            </div>
+        </div>
+<!--InterFace-->
+        <div class="w-full bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-emerald-50">
+            <div class="text-center mb-8">
+                <span class="inline-block px-4 py-1 bg-emerald-50 text-emerald-600 text-sm font-bold rounded-full mb-3">2020-2022</span>
+                <h3 class="text-2xl md:text-3xl font-bold text-tech-green">Inginer Agronom - Consultanță agricolă</h3>
+            </div>
+            
+            <div class="space-y-4 text-slate-600 text-base mb-10 max-w-4xl mx-auto">
+                <p class="text-justify">
+                  Coordonarea operațiunilor tehnice de teren și gestionarea conformității agricole. Activitatea a inclus ridicări topografice, inventarierea și 
+                  trasarea parcelelor utilizând echipamente GPS de precizie, precum și monitorizarea aeriană a stării de vegetație prin intermediul tehnologiei UAV. 
+                  Pe plan tehnologic și administrativ, au existat activități de elaborare a fișelor tehnologice pentru culturile fermei și întocmirea rapoartelor oficiale pentru instituțiile 
+                  publice (APIA, Camere Agricole, Primării), garantând alinierea operațiunilor din teren cu cerințele legale de finanțare și reglementare.  
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-1 gap-4">
+                <img src="InterFace/InterFace.jpeg" class="w-full h-48 md:h-64 object-contain bg-white rounded-xl border border-slate-100">
+            </div>
+        </div>
+<!--Electrotehnică -->
+        <div class="w-full bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-emerald-50">
+            <div class="text-center mb-8">
+                <span class="inline-block px-4 py-1 bg-emerald-50 text-emerald-600 text-sm font-bold rounded-full mb-3">2021 - prezent</span>
+                <h3 class="text-2xl md:text-3xl font-bold text-tech-green">Proiectare si construcție de sisteme electrotehnice</h3>
+            </div>
+            
+            <div class="space-y-4 text-slate-600 text-base mb-10 max-w-4xl mx-auto">
+                <p class="text-justify">
+                   Gestionarea integrală a fluxului de dezvoltare hardware pentru sisteme de automatizare, de la proiectarea schemelor și rutarea cablajelor imprimate (PCB), până la asamblarea, 
+                   testarea și calibrarea prototipurilor fizice. Portofoliul de proiecte include module telemetrice pentru monitorizarea parametrilor de mediu, sisteme de management al puterii și 
+                   plăci electronice fabricate la standarde industriale. Această expertiză fundamentală la nivel de componentă asigură baza tehnică necesară pentru construirea, integrarea și depanarea echipamentelor mecatronice și IoT personalizate, 
+                   oferind independență în implementarea soluțiilor hardware de precizie pentru Agricultura 4.0.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                <img src="Electro\Electro6.jpg" class="w-full h-48 md:h-64 object-contain bg-white rounded-xl border border-slate-100">
+                <img src="Electro\Electro4.jpg" class="w-full h-48 md:h-64 object-contain bg-white rounded-xl border border-slate-100">
+                <img src="Electro\Electro1.jpg" class="w-full h-48 md:h-64 object-contain bg-white rounded-xl border border-slate-100">
+                <img src="Electro\Electro2.jpg" class="w-full h-48 md:h-64 object-contain bg-white rounded-xl border border-slate-100">
+                <img src="Electro\Electro3.jpg" class="w-full h-48 md:h-64 object-contain bg-white rounded-xl border border-slate-100">
+                <img src="Electro\Electro5.jpeg" class="w-full h-48 md:h-64 object-contain bg-white rounded-xl border border-slate-100">
+            </div>
+        </div>
+<!-- Licenta-->
+        <div class="w-full bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-emerald-50">
+            <div class="text-center mb-8">
+                <span class="inline-block px-4 py-1 bg-emerald-50 text-emerald-600 text-sm font-bold rounded-full mb-3">2020</span>
+                <h3 class="text-2xl md:text-3xl font-bold text-tech-green">Implementarea și testarea unui sistem automatizat de irigare prin picurare (Lucrare de Diplomă) </h3>
+            </div>
+            
+            <div class="space-y-4 text-slate-600 text-base mb-10 max-w-4xl mx-auto">
+                <p class="text-justify">
+                    Lucrarea a vizat proiectarea, implementarea și testarea unui sistem automatizat de irigare prin picurare pentru culturi legumicole (salată și ridiche de lună). Automatizarea a fost realizată cu ajutorul unui microcontroler Arduino UNO conectat la senzori de umiditate a solului. 
+                    Sistemul a fost programat să declanșeze o pompă de apă printr-un releu atunci când umiditatea substratului scădea sub pragul setat și să o oprească imediat la atingerea acestei valori, debitul apei fiind optimizat printr-un modul step-down LM2596. Pe parcursul ciclului de vegetație, 
+                    instalația a funcționat continuu, validând eficiența irigării de precizie prin optimizarea consumului de apă și inhibarea dezvoltării buruienilor pe intervalele dintre rânduri, comparativ cu metodele de udare convenționale. În plus, a fost consemnat si discutat un fenomen de hidrotropism la nivelul radacinilor.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <img src="Licenta\Slide3.jpg" class="w-full h-48 md:h-64 object-contain bg-white rounded-xl border border-slate-100">
+                <img src="Licenta\Slide8.jpg" class="w-full h-48 md:h-64 object-contain bg-white rounded-xl border border-slate-100">
+                <img src="Licenta\Slide15.jpg" class="w-full h-48 md:h-64 object-contain bg-white rounded-xl border border-slate-100">
+            </div>
+        </div>
+<!--FameLab -->
+        <div class="w-full bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-emerald-50">
+            <div class="text-center mb-8">
+                <span class="inline-block px-4 py-1 bg-emerald-50 text-emerald-600 text-sm font-bold rounded-full mb-3">2019</span>
+                <h3 class="text-2xl md:text-3xl font-bold text-tech-green">Finalist FameLab</h3>
+            </div>
+            
+            <div class="space-y-4 text-slate-600 text-base mb-10 max-w-4xl mx-auto">
+                <p class="text-justify">
+                    Finalist în cadrul competiției internaționale de comunicare a științei FameLab, organizată de British Council România, a vizat evaluarea abilităților de a sintetiza și expune concepte academice complexe într-un format strict de 3 minute. 
+                    Tema prezentată a explorat un domeniu interdisciplinar de biofizică vegetală: influența frecvențelor acustice asupra dezvoltării plantelor. Argumentația a explicat mecanismele prin care undele sonore pot declanșa răspunsuri fiziologice la nivelul țesuturilor vegetale. 
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <img src="FameLab\FameLab1.jpg" class="w-full h-48 md:h-64 object-contain bg-white rounded-xl border border-slate-100">
+                <img src="FameLab\FameLab2.jpeg" class="w-full h-48 md:h-64 object-contain bg-white rounded-xl border border-slate-100">
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+
+<section class="py-20 bg-white border-t border-emerald-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-tech-green mb-4">Publicații Științifice</h2>
+                <div class="w-20 h-1 bg-accent-green mx-auto"></div>
+            </div>
+
+            <div class="bg-organic-beige p-8 md:p-12 rounded-3xl shadow-sm border border-emerald-100">
+                <ul class="space-y-6 divide-y divide-emerald-200/50">
+                    
+                    <li class="pt-6 first:pt-0 flex flex-col md:flex-row md:items-baseline gap-4">
+                        <span class="text-emerald-600 font-bold min-w-[60px]">2025</span>
+                        <div>
+                            <h4 class="text-lg font-semibold text-tech-green">Influence Of Variety And Environmental Stress On Glycoalkaloid Content In Solanum tuberosum L.</h4>
+                            <p class="text-slate-600 text-sm mt-1"><span class="font-bold">Drăghici, N. T.</span><i class="italic">Scientific Papers Series Management, Economic Engineering in Agriculture & Rural Development</i>, 25(4)</p>
+                        </div>
+                    </li>
+
+                    <li class="pt-6 first:pt-0 flex flex-col md:flex-row md:items-baseline gap-4">
+                        <span class="text-emerald-600 font-bold min-w-[60px]">2025</span>
+                        <div>
+                            <h4 class="text-lg font-semibold text-tech-green">Abiotic Stress Management In Potato Crop: Evaluation Of Anthocyanin Accumulation For Salad Blue Cultivar.</h4>
+                            <p class="text-slate-600 text-sm mt-1"><span class="font-bold">Drăghici, N. T.</span>, Sava-Sand, C.<i class="italic">Scientific Papers Series Management, Economic Engineering in Agriculture & Rural Development</i>, 25(1)</p>
+                        </div>
+                    </li>
+
+                    <li class="pt-6 first:pt-0 flex flex-col md:flex-row md:items-baseline gap-4">
+                        <span class="text-emerald-600 font-bold min-w-[60px]">2024</span>
+                        <div>
+                            <h4 class="text-lg font-semibold text-tech-green">The Impact Of Water And Nutrient Stress On Four Potato Varieties Grown In The Central Area Of Romania.</h4>
+                            <p class="text-slate-600 text-sm mt-1"><span class="font-bold">Drăghici, N. T.</span>, Nagy, A. M., Sava-Sand, C. <i class="italic">Scientific Papers Series Management, Economic Engineering in Agriculture & Rural Development</i>, 24(4)</p>
+                        </div>
+                    </li>   
+                    
+                    <li class="pt-6 first:pt-0 flex flex-col md:flex-row md:items-baseline gap-4">
+                        <span class="text-emerald-600 font-bold min-w-[60px]">2024</span>
+                        <div>
+                            <h4 class="text-lg font-semibold text-tech-green">The Growth and Development of the Potato According to their Variety in the Central Area of Romania.</h4>
+                            <p class="text-slate-600 text-sm mt-1"><span class="font-bold">Drăghici, N. T.</span>, Nagy, A. M., Sava-Sand, C.<i class="italic">Bulletin of the University of Agricultural Sciences & Veterinary Medicine Cluj-Napoca. Agriculture, </i>, 81(1)</p>
+                        </div>
+                    </li>  
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="py-12 bg-white border-t border-emerald-100">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-tech-green font-bold mb-4">Dr. Ing. Tiberiu Drăghici</p>
+            <p class="text-sm text-slate-500">© 2026. Expertiză în Agricultură 4.0 & Tehnologii de Precizie. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -130,20 +130,34 @@
 <body class="bg-organic-beige text-slate-800 leading-relaxed">
 
     <!-- NAVIGATIE -->
-    <nav class="fixed w-full z-50 glass-card border-b border-emerald-100" aria-label="Navigatie principala">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <div class="w-8 h-8 bg-accent-green rounded-full flex items-center justify-center text-white font-bold text-xs" aria-hidden="true">TD</div>
-                <span class="font-bold text-accent-green tracking-tight">Dr. Ing. Tiberiu Drăghici</span>
-            </div>
-            <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-wider text-accent-green">
-                <a href="#instrumente" class="hover:text-tech-green transition-colors py-1 border-b-2 border-transparent hover:border-accent-green">Instrumente</a>
-                <a href="#servicii" class="hover:text-tech-green transition-colors py-1 border-b-2 border-transparent hover:border-accent-green">Servicii</a>
-                <a href="experiente.html"  class="hover:text-tech-green transition-colors py-1 border-b-2 border-transparent hover:border-accent-green">Experiențe</a>
-                <a href="#contact" class="px-5 py-2 bg-accent-green text-white rounded-lg hover:bg-tech-green transition-all">Contact</a>
-            </div>
+    <nav class="fixed w-full z-50 glass-card border-b border-emerald-100">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <div class="w-8 h-8 bg-accent-green rounded-full flex items-center justify-center text-white font-bold text-xs">TD</div>
+            <span class="font-bold text-accent-green tracking-tight">Dr. Ing. Tiberiu Drăghici</span>
         </div>
-    </nav>
+
+        <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-wider text-accent-green/80 items-center">
+            <a href="index.html" class="hover:text-accent-green transition-colors">Acasă</a>
+            <a href="experiente.html" class="text-accent-green font-bold border-b-2 border-accent-green pb-1">Experiențe</a>
+            <a href="index.html#contact" class="px-4 py-2 bg-accent-green text-white rounded-lg hover:bg-emerald-600 transition-all">Contact</a>
+        </div>
+
+        <button id="mobile-menu-btn" class="md:hidden text-accent-green hover:text-emerald-600 focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-emerald-100 absolute w-full shadow-lg">
+        <div class="flex flex-col px-6 py-4 space-y-4 text-sm font-semibold uppercase tracking-wider text-accent-green/80 text-center">
+            <a href="index.html" class="block hover:text-accent-green transition-colors py-2">Acasă</a>
+            <a href="experiente.html" class="block text-accent-green font-bold py-2">Experiențe</a>
+            <a href="index.html#contact" class="block px-4 py-3 mt-2 bg-accent-green text-white rounded-lg hover:bg-emerald-600 transition-all">Contact</a>
+        </div>
+    </div>
+</nav>
 
     <!-- HERO -->
     <header class="relative pt-32 pb-20 md:pt-44 md:pb-32 hero-gradient overflow-hidden" itemscope itemtype="https://schema.org/Person">
@@ -475,6 +489,12 @@
         }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
         document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
     </script>
 
 </body>

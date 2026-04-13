@@ -483,6 +483,7 @@
     </footer>
 
     <script>
+        // Animațiile la scroll
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -493,12 +494,23 @@
         }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
         document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+        // Logica pentru meniul de mobil
         const mobileBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = mobileMenu.querySelectorAll('a'); // Preluăm toate linkurile din meniul de mobil
 
+        // Deschide/închide meniul la apăsarea butonului hamburger
         mobileBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-    });
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Închide meniul automat când se apasă pe oricare link din el
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
     </script>
 
 </body>

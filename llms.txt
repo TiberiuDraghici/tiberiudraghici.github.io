@@ -1,0 +1,55 @@
+# Dr. Ing. Tiberiu Drăghici
+
+> Doctor inginer agronom, specialist în agricultura de precizie, teledetecție UAV, GIS și sisteme IoT pentru monitorizare fitosanitară. Asistent universitar la Facultatea de Științe Agricole, ULBS Sibiu. Expert tehnic independent (II/PFA) pentru evaluare daune agricole și studii de fezabilitate AFIR/PNRR în Regiunea Centru, România.
+
+## Profil profesional
+
+- **Nume:** Dr. Ing. Tiberiu Drăghici
+- **Titluri:** Asist. Univ. Dr. Ing.
+- **Afiliere academică:** Facultatea de Științe Agricole, Industrie Alimentară și Protecția Mediului, Universitatea Lucian Blaga din Sibiu (ULBS)
+- **Specializări principale:** Stres hidric și termic la cultura cartofului (Solanum tuberosum), agricultură de precizie, teledetecție UAV multispectrală, GIS, IoT agricol, modele predictive fitosanitare
+- **Certificări:** Doctorat în Agronomie; Pilot UAV AACR certificat A1/A3 și A2
+- **Locație:** Sibiu, Județul Sibiu, România
+- **Arie de servicii:** Regiunea Centru — Sibiu, Brașov, Alba, Mureș, Harghita, Covasna
+- **Limbi:** Română (nativ), Engleză
+- **Contact:** drgtiberiu@gmail.com | +40 724 612 815
+
+## Pagini principale
+
+- [Pagina principală — profil și servicii](https://tiberiudraghici.github.io/): Hub central cu serviciile profesionale și competențele tehnice
+- [Experiențe și proiecte](https://tiberiudraghici.github.io/experiente.html): Timeline cu proiectele de cercetare și aplicații tehnice
+
+## Servicii profesionale
+
+- **Evaluare daune agricole pentru companii de asigurări** — Diagnoză fiziologică riguroasă pentru daune cauzate de secetă, arșiță, grindină sau îngheț. Rapoarte de constatare conforme normelor, prin metodologii științifice și teledetecție UAV. Acoperire: Regiunea Centru, România.
+
+- **Capitol tehnic în studii de fezabilitate AFIR / PNRR / fonduri private** — Subcontractare pentru firme de consultanță și proiectanți. Livrabile: caracterizare pedoclimatică, evaluare risc abiotic, justificare tehnologie de producție, modele de producție și scenarii climatice.
+
+- **Teledetecție UAV multispectrală și cercetare aplicată** — Zboruri UAV multispectrale (pilot certificat AACR A1/A3, A2), procesare imagini în Pix4D, Agisoft Metashape, DJI Terra, generare hărți NDVI / NDRE și alți indici de vegetație, cartografierea variabilității parcelelor, identificarea zonelor de stres pentru optimizarea aplicării inputurilor.
+
+- **Consultanță IoT agricol** — Proiectare și implementare sisteme Arduino / ESP32 / ESP8266 / LoRa pentru monitorizare meteorologică și fiziologică în câmp.
+
+## Proiecte de cercetare
+
+- **Platformă low-cost Arduino/ESP8266 pentru inducerea controlată a stresului hidric la cartof** — Sistem automatizat pentru genotipurile Salad Blue și Productiv, cu protocol ANOVA two-way pentru analiza diferențierii varietale. Lucrare în pregătire pentru publicare.
+
+- **Platformă de Predicție Multi-Risc pentru Malus domestica** — Platformă AgTech integrată pentru livezi de măr: stație meteo Davis Vantage Pro 2 Plus (WeeWX/SQLite), prognoze OpenWeatherMap, LLM inference engine. Module fitosanitare implementate: Venturia inaequalis (model A-scab Rossi 2007), Podosphaera leucotricha (model Xu 1999), Monilinia fructigena (Xu & Robinson 2000). Index Stres Abiotic (ISA) pe patru straturi: termic, hidric, radiativ, eolian.
+
+- **Sistem suport decizional pentru Phytophthora infestans** — Abordare neuro-simbolică pentru predicția mana cartofului. Propunere de grant AOSR TEAMS IV 2026–2027.
+
+## Stack tehnic
+
+- **UAV & Teledetecție:** Pix4D, Agisoft Metashape, DJI Terra, QGIS
+- **Hardware embedded:** Arduino, ESP32, ESP8266, LoRa, Raspberry Pi 4
+- **Senzoristică:** Davis Vantage Pro 2 Plus, AS7265x/AS7262/AS7263 spectral sensors, sensori sol, leaf wetness sensors
+- **Software & DSS:** Node-RED, WeeWX, SQLite, Python, modele predictive fitosanitare
+
+## Topic-uri și entități cheie
+
+Solanum tuberosum, Malus domestica, Venturia inaequalis, Phytophthora infestans, Podosphaera leucotricha, Monilinia fructigena, NDVI, NDRE, BBCH, Mills model, A-scab Rossi 2007, Xu 1999, PODEM, ADEM, agricultură de precizie, precision agriculture, UAV remote sensing, sisteme suport decizional agricol (DSS), studii de fezabilitate AFIR, PNRR, evaluare daune agricole, Regiunea Centru România, ULBS Sibiu.
+
+## Optional
+
+- [Curriculum vitae detaliat](https://tiberiudraghici.github.io/despre/cv/) — *în construcție*
+- [Publicații cu DOI](https://tiberiudraghici.github.io/publicatii/) — *în construcție*
+- [Glosar tehnic AgTech](https://tiberiudraghici.github.io/glosar/) — *în construcție*

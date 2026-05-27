@@ -1,0 +1,81 @@
+# =============================================================================
+# robots.txt — tiberiudraghici.github.io
+# Locație: root-ul repo-ului GitHub Pages
+# =============================================================================
+
+# Default — toți crawlerele standard pot accesa tot
+User-agent: *
+Allow: /
+Disallow: /draft/
+Disallow: /test/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*?*
+
+# =============================================================================
+# AI / LLM Crawlers — PERMISE EXPLICIT
+# =============================================================================
+# OpenAI — antrenare modele (poți schimba în Disallow dacă nu vrei training)
+User-agent: GPTBot
+Allow: /
+
+# OpenAI — fetch live pentru răspunsuri ChatGPT (NU pentru training)
+User-agent: ChatGPT-User
+Allow: /
+
+# OpenAI — search index pentru SearchGPT
+User-agent: OAI-SearchBot
+Allow: /
+
+# Google — control fin pentru utilizarea în Bard/Gemini/AI Overviews
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic — Claude (antrenare și fetch live)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Common Crawl — alimentează majoritatea LLM-urilor open-source
+User-agent: CCBot
+Allow: /
+
+# Apple — antrenare modele Apple Intelligence
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta — antrenare modele Llama
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Mistral AI
+User-agent: MistralAI-User
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# =============================================================================
+# AI Crawlers — BLOCATE
+# =============================================================================
+# Bytespider (ByteDance/TikTok) — scraping agresiv, fără utilitate SEO
+User-agent: Bytespider
+Disallow: /
+
+# =============================================================================
+# SITEMAP
+# =============================================================================
+Sitemap: https://tiberiudraghici.github.io/sitemap.xml

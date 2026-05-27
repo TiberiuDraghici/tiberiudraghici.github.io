@@ -1,0 +1,69 @@
+name: Generate Sitemap
+
+# =============================================================================
+# Workflow pentru generarea automată a sitemap.xml la fiecare push pe main.
+# Scanează toate fișierele .html din repo și produce sitemap.xml actualizat.
+# =============================================================================
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**.html'
+      - '.github/workflows/sitemap.yml'
+  workflow_dispatch:  # permite rulare manuală din UI GitHub
+
+permissions:
+  contents: write
+
+jobs:
+  generate-sitemap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate sitemap.xml
+        uses: cicirello/generate-sitemap@v1
+        with:
+          base-url-path: https://tiberiudraghici.github.io/
+          path-to-root: .
+          include-html: true
+          include-pdf: false
+          additional-extensions: ''
+          sitemap-format: xml
+          drop-html-extension: false
+          # Exclude pagini draft/test/private
+          # (regex-uri suplimentare se pot configura prin variabile)
+
+      - name: Show generated sitemap
+        run: |
+          echo "===== Generated sitemap.xml ====="
+          cat sitemap.xml
+          echo "================================="
+          echo "URL count: $(grep -c '<loc>' sitemap.xml)"
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sitemap.xml
+          if git diff --staged --quiet; then
+            echo "No changes to sitemap.xml"
+          else
+            git commit -m "chore(sitemap): auto-update sitemap.xml [skip ci]"
+            git push
+            echo "Sitemap updated and pushed"
+          fi
+
+      - name: Ping search engines (IndexNow + Google)
+        if: success()
+        run: |
+          # Google
+          curl -sS "https://www.google.com/ping?sitemap=https://tiberiudraghici.github.io/sitemap.xml" || true
+          # Bing (IndexNow API key opțional — vezi https://www.indexnow.org/)
+          curl -sS "https://www.bing.com/ping?sitemap=https://tiberiudraghici.github.io/sitemap.xml" || true
+          echo "Search engines pinged"

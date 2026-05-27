@@ -1,0 +1,34 @@
+{
+  "name": "Dr. Ing. Tiberiu Drăghici — Specialist Tehnic Agricol",
+  "short_name": "Tiberiu Drăghici",
+  "description": "Dr. Ing. Tiberiu Drăghici — specialist tehnic agricol, agricultură de precizie, teledetecție UAV și expertiză agronomică în Regiunea Centru, România.",
+  "lang": "ro-RO",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "minimal-ui",
+  "orientation": "portrait-primary",
+  "background_color": "#fdfaf5",
+  "theme_color": "#1b3022",
+  "categories": ["business", "education", "productivity"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
